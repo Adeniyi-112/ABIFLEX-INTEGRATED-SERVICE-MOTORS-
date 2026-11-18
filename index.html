@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ABIFLEX INTEGRATED SERVICE MOTORS</title>
+
+<meta name="description" content="ABIFLEX Integrated Service Motors offers car sales, vehicle repairs, maintenance and car buying and reselling services in Kaduna, Nigeria.">
+
+<meta name="theme-color" content="#071b35">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f7fa;
+  color: #172638;
+  line-height: 1.6;
+}
+
+header {
+  background: #071b35;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #9dc8f2;
+}
+
+.hero {
+  min-height: 520px;
+  background:
+    linear-gradient(90deg, rgba(4,18,36,.96), rgba(7,27,53,.70)),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=85");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  color: white;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-small {
+  color: #a9c9e9;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  line-height: 1.12;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 17px;
+  color: #e1eaf3;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 25px;
+  background: white;
+  color: #071b35;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 5px 5px 5px 0;
+}
+
+.btn-blue {
+  background: #174a78;
+  color: white;
+}
+
+.btn:hover {
+  opacity: .85;
+}
+
+section {
+  padding: 75px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  color: #071b35;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #64748b;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: white;
+  padding: 32px 26px;
+  border: 1px solid #e2e8ef;
+  border-radius: 7px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.04);
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #0c3155;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #64748b;
+}
+
+.about {
+  background: white;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-content p {
+  color: #526173;
+  margin-bottom: 16px;
+}
+
+.why-us {
+  background: #edf2f7;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  background: white;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.feature h3 {
+  color: #0c3155;
+  margin-bottom: 8px;
+}
+
+.contact {
+  background: #071b35;
+  color: white;
+}
+
+.contact .section-title h2 {
+  color: white;
+}
+
+.contact .section-title p {
+  color: #cbd9e8;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-box {
+  background: #102d4d;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.contact-box h3 {
+  margin-bottom: 12px;
+  color: #a9c9e9;
+}
+
+.contact-box p {
+  color: #e1eaf3;
+}
+
+.contact-box a {
+  color: white;
+  text-decoration: none;
+}
+
+.map {
+  margin-top: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map iframe {
+  width: 100%;
+  height: 330px;
+  border: 0;
+}
+
+footer {
+  background: #041224;
+  color: #cbd5df;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 13px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #20b85a;
+  color: white;
+  padding: 14px 19px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  z-index: 100;
+}
+
+@media(max-width: 650px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 13px;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 65px 7%;
+  }
+
+  section {
+    padding: 55px 7%;
+  }
+
+  .section-title h2 {
+    font-size: 27px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ABIFLEX MOTORS</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <div class="hero-small">WELCOME TO ABIFLEX MOTORS</div>
+
+    <h1>Quality Cars. Trusted Automotive Services.</h1>
+
+    <p>
+      Your trusted partner for car sales, vehicle repairs,
+      maintenance and car buying and reselling services.
+      We put your automotive needs first.
+    </p>
+
+    <a href="#services" class="btn">Explore Services</a>
+
+    <a href="https://wa.me/2348034521572"
+       class="btn btn-blue" target="_blank">
+       Contact Us
+    </a>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Professional automotive solutions you can trust.</p>
+  </div>
+
+  <div class="services">
+
+    <div class="service-card">
+      <div class="service-icon">🚘</div>
+      <h3>Car Sales</h3>
+      <p>
+        Find vehicles that suit your needs.
+        We help customers with car sales and vehicle selection.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🔧</div>
+      <h3>Auto Repair & Maintenance</h3>
+      <p>
+        Vehicle repair and maintenance services
+        to help keep your car in good working condition.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🚗</div>
+      <h3>Buying & Reselling Cars</h3>
+      <p>
+        We buy and resell vehicles, helping customers
+        with their car buying and selling needs.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+  <div class="section-title">
+    <h2>About ABIFLEX MOTORS</h2>
+    <p>Your automotive needs are our priority.</p>
+  </div>
+
+  <div class="about-content">
+    <p>
+      ABIFLEX INTEGRATED SERVICE MOTORS is an automotive
+      business focused on car sales, auto repair,
+      vehicle maintenance and buying and reselling cars.
+    </p>
+
+    <p>
+      Our goal is to provide dependable automotive services
+      and help customers make informed vehicle decisions.
+    </p>
+
+    <p>
+      We are located in Kaduna South, Nigeria.
+      Contact us today to discuss your automotive needs.
+    </p>
+  </div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-us">
+
+  <div class="section-title">
+    <h2>Why Choose Us?</h2>
+    <p>Committed to serving your automotive needs.</p>
+  </div>
+
+  <div class="features">
+
+    <div class="feature">
+      <h3>Customer Focus</h3>
+      <p>We put customer needs and satisfaction first.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Reliable Service</h3>
+      <p>We aim to provide dependable automotive solutions.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Professional Approach</h3>
+      <p>We take every customer enquiry seriously.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Multiple Services</h3>
+      <p>Car sales, repairs and vehicle reselling in one place.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="section-title">
+    <h2>Contact Us</h2>
+    <p>Get in touch with ABIFLEX INTEGRATED SERVICE MOTORS.</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-box">
+      <h3>Phone Number</h3>
+      <p>
+        <a href="tel:08034521572">08034521572</a>
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Email Address</h3>
+      <p>
+        <a href="mailto:abiodunadeniyi973@gmail.com">
+          abiodunadeniyi973@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Business Address</h3>
+      <p>
+        Gwari Avenue, opposite Early Day School,
+        Kaduna South, Nigeria.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="map">
+    <iframe
+      src="https://maps.google.com/maps?q=Gwari%20Avenue%2C%20Kaduna%20South%2C%20Nigeria&t=&z=14&ie=UTF8&iwloc=&output=embed"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    &copy; <span id="year"></span>
+    ABIFLEX INTEGRATED SERVICE MOTORS.
+    All Rights Reserved.
+  </p>
+
+  <p>Professional Automotive Services | Kaduna, Nigeria</p>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp"
+   href="https://wa.me/2348034521572"
+   target="_blank">
+   WhatsApp Us
+</a>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+  </html>
+  
